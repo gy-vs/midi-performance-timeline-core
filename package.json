@@ -1,0 +1,31 @@
+{
+  "name": "midi-timing-core",
+  "version": "0.1.0",
+  "description": "Cross-track MIDI performance timeline kernel: tempo-aware tick/time mapping, ordered performance events, and active-note state recovery.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --import tsx test/*.test.ts"
+  },
+  "keywords": [
+    "midi",
+    "timeline",
+    "tempo",
+    "smpte",
+    "transport"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "midi-file": "^1.2.4"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "@types/node": "^20.16.0"
+  }
+}
